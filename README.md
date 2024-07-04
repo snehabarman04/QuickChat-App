@@ -18,3 +18,4 @@ Real-Time Database: Firebase Firestore provides real-time database updates, ensu
 Cloud Storage: User data and media are stored securely using Firebase Cloud Storage, ensuring data integrity and accessibility.
 
 PS: I have also uploaded a video walk-through of the app, suggestions for changes are highly appreciated! Hope you like it :)
+https://fir-testing-c7047.web.app/
