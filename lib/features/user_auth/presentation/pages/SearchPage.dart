@@ -147,8 +147,8 @@ class _SearchPageState extends State<SearchPage> {
                               },
                               leading: CircleAvatar(
                                 backgroundImage:
-                                    AssetImage('profile_default.png'),
-                                //NetworkImage(searchedUser.profilepic!),
+                                    //AssetImage('profile_default.png'),
+                                NetworkImage(searchedUser.profilepic!),
                                 backgroundColor:
                                     Color.fromARGB(255, 114, 193, 239),
                               ),
