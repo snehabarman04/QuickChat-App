@@ -18,7 +18,6 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     Future.delayed(Duration(seconds: 3), () {
       //we do not want the user to navigate back to the splash screen once it goes to the login page
       Navigator.pushAndRemoveUntil(
@@ -33,27 +32,25 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        fit: StackFit.expand, // Make the Stack take up the entire screen.
+        fit: StackFit.expand,
         children: [
-          // Full-screen background image.
           Positioned.fill(
             child: Image.asset(
               'assets/background.jpg',
               fit: BoxFit.cover,
             ),
           ),
-          // Centered text overlay.
           Center(
             child: Text(
               "Welcome To QuickChat",
               style: TextStyle(
                 color: Colors
-                    .white, // White text color for better visibility on images.
+                    .white,
                 fontWeight: FontWeight.bold,
                 fontSize: 45,
                 shadows: [
                   Shadow(
-                    blurRadius: 10.0, // Add shadow for text readability.
+                    blurRadius: 10.0,
                     color: Colors.black45,
                     offset: Offset(2.0, 2.0),
                   ),
