@@ -31,8 +31,6 @@ class FormContainerWidget extends StatefulWidget {
 
 class _FormContainerWidgetState extends State<FormContainerWidget> {
   bool _obscureText = true;
-  //A boolean that determines whether the text in the form field is obscured for password fields
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -57,9 +55,7 @@ class _FormContainerWidgetState extends State<FormContainerWidget> {
           hintText: widget.hintText,
           hintStyle: TextStyle(color: Colors.black45),
           suffixIcon: new GestureDetector(
-            //If isPasswordField is true, it shows an icon (eye or eye with a slash) indicating text visibility
             onTap: () {
-              //When tapped, it switches _obscureText between true and false, updating the field to either show or hide the text.
               setState(() {
                 _obscureText = !_obscureText;
               });
