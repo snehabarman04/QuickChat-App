@@ -110,7 +110,6 @@ class _CompleteProfilePageState extends State<CompleteProfilePage> {
         widget.userModel.profilepic = imageUrl;
       }
 
-      // Update Firestore with user data
       widget.userModel.fullname = fullname;
       await FirebaseFirestore.instance
           .collection("users")
